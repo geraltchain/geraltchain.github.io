@@ -1,68 +1,117 @@
-HTML
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Witcher Geralt of Rivia</title>
-  <style>
-    /* Add your styling here!  This is basic for now. */
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      padding: 2em;
-    }
-    h1 {
-      text-align: center;
-    }
-    .disclaimer {
-      font-size: smaller;
-      margin-top: 2em;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geralt of Rivia, the Witcher</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f0f2f5;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 1.7rem;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            line-height: 1.5
+        }
+
+        .container {
+            max-width: 60vw;
+            margin: auto;
+        }
+
+        .disclaimer {
+            margin-top: 2em;
+        }
+
+        .service-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .service-list-item {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .service-icon {
+            width: 3rem;
+            height: 3rem;
+            margin-right: 1rem;
+            border-radius: 50%;
+        }
+
+        .important {
+            font-weight: bold;
+        }
+    </style>
 </head>
+
 <body>
-  <h1>Witcher Geralt of Rivia</h1>
-  <h2>Professional Monster Slayer</h2>
-  <p>*GeraltofRivia*</p>
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold">Geralt of Rivia, the Witcher</h1>
+        <h2>Professional Monster Slayer</h2>
+        <p>Hired muscle specializing in various unpleasant beasts. No refunds if you're the one who turns out to be the monster.</p>
+        <h3>Currently Accepting Contracts for:</h3>
+        <ul class="service-list">
+            <li class="service-list-item"><img src="https://github.com/geraltchain/geraltchain.github.io/blob/main/images/spider.png?raw=true"
+                    alt="Endrega Queen Icon" class="service-icon" /><strong>Endrega
+                    Queens</strong>&nbsp;- Eradicating these oversized arachnids is a specialty.</li>
+            <li class="service-list-item"><img src="https://github.com/geraltchain/geraltchain.github.io/blob/main/images/drowned.png?raw=true"
+                    alt="Drowner Icon" class="service-icon" /><strong>Drowners</strong>&nbsp;- These
+                mutagens ain't gonna drink themselves. Bulk discounts available.</li>
+            <li class="service-list-item"><img src="https://github.com/geraltchain/geraltchain.github.io/blob/main/images/werewolf.png?raw=true"
+                    alt="Werewolf Icon" class="service-icon" /><b class="important">Werewolves</b>&nbsp;- Full moon got you howling for trouble? Let me rewrite the
+                ending of your story.</li>
+            <li class="service-list-item"><img src="https://github.com/geraltchain/geraltchain.github.io/blob/main/images/spirit.png?raw=true" alt="Leshen Icon"
+                    class="service-icon" /><strong>Leshens</strong>&nbsp;-
+                Protective of their territory, but reason can be attempted...sometimes.</li>
+            <li class="service-list-item"><img src="https://github.com/geraltchain/geraltchain.github.io/blob/main/images/nest.png?raw=true"
+                    alt="Generic Monster Icon" class="service-icon" /><strong>Custom
+                    Contracts</strong>&nbsp;- Got a nest of problems you can't quite identify? Consultation available.</li>
+        </ul>
+        <h3>Rates Negotiable:</h3>
+        <ul class="list-disc pl-4">
+            <li>Novigrad Crowns preferred</li>
+            <li>Coin is good, but rare monster parts can also be considered (Wyvern eggs excluded...been there, done that).</li>
+            <li>A safe bed and a hearty meal are always appreciated.</li>
+        </ul>
+        <h3>Not Interested In:</h3>
+        <ul class="list-disc pl-4">
+            <li>Politics - Leave the scheming to the Kings and Queens.</li>
+            <li>Fetch Quests - Unless it involves a relic with actual magical properties.</li>
+            <li>Babysitting anything with more teeth than a human.</li>
+        </ul>
+        <h3>Disclaimer:</h3>
+        <ul class="list-disc pl-4">
+            <li>I do not guarantee the safety of your livestock.</li>
+            <li>Collateral damage may occur.</li>
+            <li>The client assumes all responsibility for damages caused by the very monster they hired me to slay (Seems obvious, but you'd be surprised).
+            </li>
+        </ul>
 
-  <p>Hired muscle specializing in various unpleasant beasts. No refunds if you're the one who turns out to be the monster.</p>
+        <h3>Contact:</h3>
+        <p>[geralt.chain@gmail.com] (Carrier pigeon deliveries only. Patience is a virtue.)</p>
 
-  <h2>Currently Accepting Contracts for:</h2>
-  <ul>
-    <li>**Endrega Queens** - Eradicating these oversized arachnids is a specialty.</li>
-    <li>**Drowners** - These mutagens ain't gonna drink themselves. Bulk discounts available.</li>
-    <li>**Werewolves** - Full moon got you howling for trouble? Let me rewrite the ending of your story.</li>
-    <li>**Leshens** - Protective of their territory, but reason can be attempted...sometimes.</li>
-    <li>**Custom Contracts** - Got a nest of problems you can't quite identify? Consultation available.</li>
-  </ul>
-
-  <h2>Rates Negotiable:</h2>
-  <ul>
-    <li>Novigrad Crowns preferred</li>
-    <li>Coin is good, but rare monster parts can also be considered (Wyvern eggs excluded...been there, done that).</li>
-    <li>A safe bed and a hearty meal are always appreciated.</li>
-  </ul>
-
-  <h2>Not Interested In:</h2>
-  <ul>
-    <li>Politics - Leave the scheming to the Kings and Queens.</li>
-    <li>Fetch Quests - Unless it involves a relic with actual magical properties.</li>
-    <li>Babysitting anything with more teeth than a human.</li>
-  </ul>
-
-  <div class="disclaimer">
-    <h3>Disclaimer:</h3>
-    <ul>
-      <li>I do not guarantee the safety of your livestock.</li>
-      <li>Collateral damage may occur.</li>
-      <li>The client assumes all responsibility for damages caused by the very monster they hired me to slay (Seems obvious, but you'd be surprised).</li>
-    </ul>
-  </div>
-
-  <h2>Contact:</h2>
-  <p>[email address removed] (Carrier pigeon deliveries only. Patience is a virtue.)</p>
-
-  <p>**P.S.** Currently monster-hunting in the Warsov region. Let's discuss how I can help you sleep soundly at night (or at least until dawn).</p>
+        <p>**P.S.** Currently monster-hunting in the Warsaw region. Let's discuss how I can help you sleep soundly at night (or at least until dawn).</p>
 </body>
+
 </html>
